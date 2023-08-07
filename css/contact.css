@@ -1,0 +1,47 @@
+.line{
+  width:130px; 
+  height:2px;
+  background:#333;
+}
+.menu-desktop a:nth-child(1) ~ .line{
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+    transform:translate(130px);
+    background-color:#333;;
+  }
+  .menu-desktop a:nth-child(1):hover ~ .line{
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+    transform:translate(0);
+    background-color:#333;;
+  }
+  .menu-desktop  a:nth-child(2) ~ .line {
+    background-color:#03a9f4;;
+  }
+.menu-desktop  a:nth-child(2):hover ~ .line {
+    transform:translate(130px);
+    -webkit-transform:translate(130px);
+    background-color:#03a9f4;;
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+  }
+.menu-desktop a:nth-child(3):hover ~ .line {
+    transform:translate(266px);
+    -webkit-transform:translate(266px);
+    background-color:#333;
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+  }
+.menu-desktop a:nth-child(4):hover ~ .line {
+    transform:translate(130px);
+    -webkit-transform:translate(380px);
+    background-color:#f39c12;
+    color:#03C9A9;
+    transition:all .33s linear;
+    -webkit-transition:all .33s linear;
+  }
+
+.menu-desktop a:nth-child(3):hover {
+    color:#333;
+  }
+  
